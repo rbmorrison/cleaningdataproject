@@ -77,4 +77,4 @@ names(df_summary) <- gsub("Acc","Acceleration",names(df_summary))
 names(df_summary) <- gsub("\\.","",names(df_summary))
 
 write.table(df_summary, file="data_summary.txt", row.name=FALSE)
-"Analysis complete.  No errors. No warnings. Output file: data_summary.txt"
+cat("Analysis complete.  No errors. No warnings. Output file: data_summary.txt")
